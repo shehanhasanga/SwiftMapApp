@@ -17,6 +17,7 @@
 		BE7E01D327B20EE00099E3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7E01D227B20EE00099E3CE /* Assets.xcassets */; };
 		BE7E01D627B20EE00099E3CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7E01D527B20EE00099E3CE /* Preview Assets.xcassets */; };
 		BEA34E8227B24B9C000AF30F /* LocationMapAnnotator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA34E8127B24B9C000AF30F /* LocationMapAnnotator.swift */; };
+		BEA34E8427B24EEE000AF30F /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA34E8327B24EEE000AF30F /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BE7E01D227B20EE00099E3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7E01D527B20EE00099E3CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEA34E8127B24B9C000AF30F /* LocationMapAnnotator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotator.swift; sourceTree = "<group>"; };
+		BEA34E8327B24EEE000AF30F /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 				BE667B9527B230CD008D5EC3 /* LocationsListView.swift */,
 				BE667B9727B23859008D5EC3 /* LocationPreview.swift */,
 				BEA34E8127B24B9C000AF30F /* LocationMapAnnotator.swift */,
+				BEA34E8327B24EEE000AF30F /* LocationDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				BE667B8F27B210A2008D5EC3 /* Location.swift in Sources */,
 				BEA34E8227B24B9C000AF30F /* LocationMapAnnotator.swift in Sources */,
 				BE667B9827B23859008D5EC3 /* LocationPreview.swift in Sources */,
+				BEA34E8427B24EEE000AF30F /* LocationDetailsView.swift in Sources */,
 				BE7E01CF27B20EDE0099E3CE /* MapAppApp.swift in Sources */,
 				BE667B9627B230CD008D5EC3 /* LocationsListView.swift in Sources */,
 				BE667B9427B2160E008D5EC3 /* LocationViewModel.swift in Sources */,

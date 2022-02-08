@@ -43,6 +43,9 @@ struct ContentView: View {
             }
           
         }
+        .sheet(item: $locationViewModel.sheetLocation, onDismiss: nil) { location in
+            LocationDetailsView(location: location)
+        }
        
 //        List{
 //            ForEach(locationViewModel.locations){ location in

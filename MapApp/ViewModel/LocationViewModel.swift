@@ -13,7 +13,7 @@ class LocationViewModel : ObservableObject {
     @Published var locations : [Location]
     @Published var mapRegion : MKCoordinateRegion = MKCoordinateRegion()
     @Published var showListView:Bool = false
-    
+    @Published var sheetLocation : Location? = nil
     @Published var location : Location {
         didSet{
             updateMapregion()
