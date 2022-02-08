@@ -10,6 +10,7 @@
 		BE667B8F27B210A2008D5EC3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE667B8E27B210A2008D5EC3 /* Location.swift */; };
 		BE667B9227B211A4008D5EC3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE667B9127B211A4008D5EC3 /* DataService.swift */; };
 		BE667B9427B2160E008D5EC3 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE667B9327B2160E008D5EC3 /* LocationViewModel.swift */; };
+		BE667B9627B230CD008D5EC3 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE667B9527B230CD008D5EC3 /* LocationsListView.swift */; };
 		BE7E01CF27B20EDE0099E3CE /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7E01CE27B20EDE0099E3CE /* MapAppApp.swift */; };
 		BE7E01D127B20EDE0099E3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7E01D027B20EDE0099E3CE /* ContentView.swift */; };
 		BE7E01D327B20EE00099E3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7E01D227B20EE00099E3CE /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		BE667B8E27B210A2008D5EC3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BE667B9127B211A4008D5EC3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BE667B9327B2160E008D5EC3 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		BE667B9527B230CD008D5EC3 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		BE7E01CB27B20EDE0099E3CE /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7E01CE27B20EDE0099E3CE /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		BE7E01D027B20EDE0099E3CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		BE667B8B27B21029008D5EC3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE667B9527B230CD008D5EC3 /* LocationsListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				BE7E01D127B20EDE0099E3CE /* ContentView.swift in Sources */,
 				BE667B8F27B210A2008D5EC3 /* Location.swift in Sources */,
 				BE7E01CF27B20EDE0099E3CE /* MapAppApp.swift in Sources */,
+				BE667B9627B230CD008D5EC3 /* LocationsListView.swift in Sources */,
 				BE667B9427B2160E008D5EC3 /* LocationViewModel.swift in Sources */,
 				BE667B9227B211A4008D5EC3 /* DataService.swift in Sources */,
 			);

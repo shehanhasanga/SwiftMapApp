@@ -7,10 +7,12 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
 class LocationViewModel : ObservableObject {
     @Published var locations : [Location]
     @Published var mapRegion : MKCoordinateRegion = MKCoordinateRegion()
+    @Published var showListView:Bool = false
     
     @Published var location : Location {
         didSet{
@@ -30,6 +32,18 @@ class LocationViewModel : ObservableObject {
     
     private func updateMapregion(){
         self.mapRegion = MKCoordinateRegion(center: self.location.coordinates, span: span)
+    }
+    
+     func toggleLocationList(){
+        withAnimation(.easeInOut) {
+            showListView.toggle()
+        }
+       
+    }
+    
+    func gotonextLocation(location: Location) {
+        self.location = location
+        self.showListView.toggle()
     }
   
 }
