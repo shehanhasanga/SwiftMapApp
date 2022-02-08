@@ -19,6 +19,16 @@ struct ContentView: View {
                 
                 
                 Spacer()
+                
+                ZStack{
+                    ForEach(locationViewModel.locations){ location in
+                        if location == locationViewModel.location {
+                            LocationPreview(location: location)
+                                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                        }
+                       
+                    }
+                }
                     
             }
           

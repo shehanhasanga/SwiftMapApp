@@ -42,8 +42,32 @@ class LocationViewModel : ObservableObject {
     }
     
     func gotonextLocation(location: Location) {
-        self.location = location
-        self.showListView.toggle()
+        withAnimation(.easeInOut) {
+            self.location = location
+            self.showListView = false
+        }
+      
+    }
+    
+    func nextBtnClick(){
+        guard let currentIndex = locations.firstIndex(where: {$0.id == location.id}) else {
+            return
+        }
+        
+        let nextLocationIndex = currentIndex + 1
+        
+        guard locations.indices.contains(nextLocationIndex) else {
+            guard let firstLocation = locations.first else {
+                return
+            }
+            gotonextLocation(location: firstLocation)
+            
+            return
+        }
+        
+        let nextLocation  = locations[nextLocationIndex]
+        gotonextLocation(location: nextLocation)
+        
     }
   
 }
