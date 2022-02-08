@@ -12,7 +12,17 @@ struct ContentView: View {
     @EnvironmentObject var locationViewModel : LocationViewModel
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $locationViewModel.mapRegion) .ignoresSafeArea()
+            Map(coordinateRegion: $locationViewModel.mapRegion, annotationItems: locationViewModel.locations, annotationContent: { location in
+                MapAnnotation(coordinate: location.coordinates) {
+                    LocationMapAnnotator()
+                        .scaleEffect(locationViewModel.location == location ? 1 : 0.7)
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            locationViewModel.gotonextLocation(location: location)
+                        }
+                }
+            })
+         .ignoresSafeArea()
             VStack(){
                 header
                 .padding()
